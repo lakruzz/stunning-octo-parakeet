@@ -11,7 +11,7 @@ If you have any questions or need help feel free to join the [discussion 💬 @ 
 <details><summary>Is this the first time you use a GitHub Classroom Assignment from docs.kea.dev?</summary>
 
 ---
-Have a peek at hints and ground rules on [GitHub Classroom Assignments](https://docs.kea.dev/posts/github-classroom/)
+Have a    peek at hints and ground rules on [GitHub Classroom Assignments](https://docs.kea.dev/posts/github-classroom/)
 
 ---
 </details>
