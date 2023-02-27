@@ -1,0 +1,16 @@
+# README: This is the team .gitconfig. 
+# To enable it you must include it in the --local config file.
+# The one-liner below adds it - if it isn't already set.
+# git config --local --get include.path | grep -Eo "\.\.\/\.gitconfig$" || git config --local --add include.path ../.gitconfig
+
+[alias]
+	root = rev-parse --show-toplevel
+	tree = log --graph --all --oneline
+	co = checkout
+	cm = commit -m  
+	st = status
+	addremove = add -A
+	acp = "!f(){ git add -A && git commit -m \"$1\" && git push; }; f"
+
+[push]
+	default = current

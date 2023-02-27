@@ -1,0 +1,26 @@
+# This file should only be edited from the template
+name: Classroom Repo Init from Template
+
+on:
+  push:
+    branches:
+      - '**'
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+permissions:
+  checks: write
+  actions: write
+  contents: read
+  issues: write
+
+jobs:
+  build:
+    name: "Copy Issues from Template"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: .github/template/cpissues.sh
+      - run: gh issue list -s all 
+      - run: gh workflow disable template.yml
